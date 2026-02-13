@@ -1,0 +1,32 @@
+<div class="container mt-5">
+    <div class="card mb-3">
+      <h3 class="card-header">{{ appTitle }}</h3>
+      
+      <div class="card-body">
+        <h5 class="card-title">{{ welcomeMessage }}</h5>
+        <h6 class="card-subtitle text-muted">{{ appDescription }}</h6>
+      </div>
+  
+      <!-- The Landing Page Visual (Orange Cat) -->
+      <img src="https://media.tenor.com/tNfwApVE9RAAAAAM/orange-cat-laughing.gif" 
+           class="d-block w-100" 
+           alt="Laughing orange cat"
+           style="height: auto; object-fit: cover;">
+  
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>Developer Name (string):</strong> {{ developerName }}</li>
+        <li class="list-group-item"><strong>System Version (number):</strong> {{ systemVersion }}</li>
+        <li class="list-group-item"><strong>Registration Open (boolean):</strong> {{ isRegOpen }}</li>
+      </ul>
+  
+      <div class="card-body">
+        <a routerLink="/register" class="card-link">Register Now</a>
+        <a routerLink="/profile" class="card-link">View Profile</a>
+      </div>
+      
+      <div class="card-footer text-muted">
+        Status: {{ isRegOpen ? 'System Active' : 'System Offline' }}
+      </div>
+    </div>
+  </div>
+  
